@@ -31,7 +31,7 @@ class CoffeeShop
     {
         // Code here...
     }
-    public function viweMenu()
+    public function viewMenu()
 
     {
         $menu = ''; 

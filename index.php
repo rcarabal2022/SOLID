@@ -3,9 +3,9 @@
 use App\CoffeeShop;
 
 $products= [
-    ['id'=> 1, 'name'=> 'Negro', 'price' => 25],
-    ['id'=> 2, 'name'=> 'Negro', 'price' => 25],
-    ['id'=> 3,'name'=> 'Negro', 'price' => 25],
+    ['id'=> 1, 'name'=> 'Negro', 'price' => 2],
+    ['id'=> 2, 'name'=> 'Con Leche', 'price' => 2.5],
+    ['id'=> 3,'name'=> 'Capuccino', 'price' => 3],
 ];
 
 $shop = New CoffeeShop();
