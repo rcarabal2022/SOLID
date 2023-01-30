@@ -1,4 +1,6 @@
 <?php include_once 'vendor/autoload.php';
+require_once 'S_Single_Responsability\CoffeeShop.php';
+
 
 use App\CoffeeShop;
 
@@ -8,9 +10,9 @@ $products= [
     ['id'=> 3,'name'=> 'Capuccino', 'price' => 3],
 ];
 
-$shop = New CoffeeShop();
+$shop = new CoffeeShop();
 
 
-$shop ->addProducts($products);
+$shop->addProducts($products);
 
 echo $shop->viewMenu();
