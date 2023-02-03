@@ -1,8 +1,11 @@
 <?php include_once 'vendor/autoload.php';
-require_once 'S_Single_Responsability\CoffeeShop.php';
+require_once 'S_Single_Responsability\Menu.php';
+require_once 'S_Single_Responsability\Cart.php';
+require_once 'S_Single_Responsability\Products.php';
 
-
-use App\CoffeeShop;
+use App\Menu;
+use App\Cart;
+use App\Products;
 
 $products= [
     ['id'=> 1, 'name'=> 'Negro', 'price' => 2],
@@ -10,9 +13,8 @@ $products= [
     ['id'=> 3,'name'=> 'Capuccino', 'price' => 3],
 ];
 
-$shop = new CoffeeShop();
+$menu = new Menu();
 
-
-$shop->addProducts($products);
-
-echo $shop->viewMenu();
+$productsInstance = new Products();
+$productsInstance->add($products);
+echo $menu->view($productsInstance->get());
